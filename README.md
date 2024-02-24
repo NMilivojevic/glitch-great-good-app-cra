@@ -6,8 +6,8 @@ This project is a React application integrated with blockchain contracts using e
 
 ## Project setup
 
--   **Development Environment**: Created the project using Create React App due to issues with Vite on Glitch.com.
--   **Blockchain Integration**: Utilized ethers.js for seamless interaction with Ethereum smart contracts.
+-   **Development Environment**: Created the project using Create React App due to issues with Vite on Glitch.
+-   **Blockchain Integration**: Utilized ethers.js for interaction with Ethereum smart contracts.
 -   **Folder Structure**: Organized the project into the following structure:
     -   `src/`: Contains the main application code.
         -   `components/`: Holds React components for UI.
