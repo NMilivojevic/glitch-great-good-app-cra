@@ -57,3 +57,7 @@ CSS modules were chosen for styling in this test assignment to maintain simplici
 ## Notes
 
 In order for account switching in MetaMask to reflect immediately in the user interface, users must enable both accounts for the domain.
+
+## Demo
+
+Check out the live demo of the app hosted on Glitch: [Great Good App](https://great-good-app.glitch.me/)
