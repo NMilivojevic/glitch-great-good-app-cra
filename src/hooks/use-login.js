@@ -1,5 +1,5 @@
 import { ethers } from "ethers";
-import { ACTIONS, useAppContext } from "../context/Context";
+import { useAppContext, ACTIONS } from "../context/Context";
 import { isMetaMaskInstalled } from "../utils/utils";
 
 const useLogin = () => {
