@@ -48,6 +48,12 @@ This project is a React application integrated with blockchain contracts using e
 
 CSS modules were chosen for styling in this test assignment to maintain simplicity. Rather than introducing more complex styling solutions like Material UI, Chakra UI, etc, CSS modules offer a straightforward approach for styling components without overcomplicating the project. This decision was made to prioritize simplicity and focus on demonstrating core functionality without unnecessary dependencies.
 
+## Dependencies
+
+-   **eth-rpc-errors**: A library for handling Ethereum RPC (Remote Procedure Call) errors.
+-   **ethers**: A JavaScript library for interacting with the Ethereum blockchain.
+-   **rc-tooltip**: A React component library for creating customizable tooltips.
+
 ## Notes
 
 In order for account switching in MetaMask to reflect immediately in the user interface, users must enable both accounts for the domain.
