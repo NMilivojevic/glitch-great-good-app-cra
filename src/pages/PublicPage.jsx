@@ -3,7 +3,7 @@ import PublicLayout from "../components/layout/PublicLayout";
 import Toast from "../components/toast/Toast";
 import { useAppContext } from "../context/Context";
 
-const PublicPage = ({}) => {
+const PublicPage = () => {
     const { state } = useAppContext();
 
     const { toast, isSuccess, isError, message } = state;

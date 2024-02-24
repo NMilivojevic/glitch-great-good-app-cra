@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+# Project Documentation
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+This project is a React application integrated with blockchain contracts using ethers.js for Ethereum blockchain interaction. The application is designed to interact with smart contracts deployed on the Mumbai Polygon network using MetaMask Browser Extension.
 
-In the project directory, you can run:
+## Project setup
 
-### `npm start`
+-   **Development Environment**: Created the project using Create React App due to issues with Vite on Glitch.com.
+-   **Blockchain Integration**: Utilized ethers.js for seamless interaction with Ethereum smart contracts.
+-   **Folder Structure**: Organized the project into the following structure:
+    -   `src/`: Contains the main application code.
+        -   `components/`: Holds React components for UI.
+        -   `contracts/`: Includes smart contract files and their artifacts.
+        -   `context/`: Manages application state using React context.
+        -   `hooks/`: Implements custom hooks for interacting with contracts and managing state.
+        -   `pages/`: Contains page-level components.
+        -   `styles/`: Includes CSS modules for styling.
+        -   `assets/`: Stores images and other static assets.
+        -   `utils/`: Contains utility functions.
+        -   `App.js` and `index.js`: Entry points for the application.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## State Management
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+-   **Context API**: Utilized React context for global state management without prop drilling.
+-   **Custom Hooks**: Created custom hooks for interacting with blockchain contracts and managing related state:
+    -   `useContract`: Sets up the contract instance.
+    -   `useStake`: Handles stake transactions using MetaMask.
+    -   `useBalance`: Retrieves the balance of the user's account from the backend.
+    -   `useLogin`: Handles user login using MetaMask.
+    -   `useWithdraw`: Manages withdraw transactions using MetaMask.
+    -   `useLogout`: Handles user logout by dispatching the logout action to the context.
+    -   `useMinStakeAmount`: Retrieves the minimum stake amount from the backend.
+    -   `useTotalSupply`: Retrieves the total supply of tokens from the backend.
 
-### `npm test`
+## Error Handling
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+-   **Error Management**: Implemented error handling using `eth-rpc-errors` to better manage MetaMask errors.
 
-### `npm run build`
+## Contract Integration
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+-   **Contract Setup**: Configured contract interaction using ethers.js:
+    -   Created JSON artifacts from Solidity contracts.
+    -   Utilized contract ABIs for contract instance creation.
+    -   Integrated contract methods for stake, withdraw, balance querying, etc.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Usage of CSS Modules
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+CSS modules were chosen for styling in this test assignment to maintain simplicity. Rather than introducing more complex styling solutions like Material UI or Chakra UI, CSS modules offer a straightforward approach for styling components without overcomplicating the project. This decision was made to prioritize simplicity and focus on demonstrating core functionality without unnecessary dependencies.
 
-### `npm run eject`
+## Notes
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+In order for account switching in MetaMask to reflect immediately in the user interface (UI), users must enable both accounts for the domain.
