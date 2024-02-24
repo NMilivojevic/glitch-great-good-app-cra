@@ -46,8 +46,8 @@ This project is a React application integrated with blockchain contracts using e
 
 ## Usage of CSS Modules
 
-CSS modules were chosen for styling in this test assignment to maintain simplicity. Rather than introducing more complex styling solutions like Material UI or Chakra UI, CSS modules offer a straightforward approach for styling components without overcomplicating the project. This decision was made to prioritize simplicity and focus on demonstrating core functionality without unnecessary dependencies.
+CSS modules were chosen for styling in this test assignment to maintain simplicity. Rather than introducing more complex styling solutions like Material UI, Chakra UI, etc, CSS modules offer a straightforward approach for styling components without overcomplicating the project. This decision was made to prioritize simplicity and focus on demonstrating core functionality without unnecessary dependencies.
 
 ## Notes
 
-In order for account switching in MetaMask to reflect immediately in the user interface (UI), users must enable both accounts for the domain.
+In order for account switching in MetaMask to reflect immediately in the user interface, users must enable both accounts for the domain.
