@@ -60,4 +60,5 @@ In order for account switching in MetaMask to reflect immediately in the user in
 
 ## Demo
 
-Check out the live demo of the app hosted on Glitch: [Great Good App](https://great-good-app.glitch.me/)
+-   Check out the live demo of the React app hosted on Glitch: [Great Good App](https://great-good-app.glitch.me/)
+-   The backend API hosted on Glitch: [Great Good API](https://great-good-api.glitch.me/)
